@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Express Booking</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+<div class="header">
+    <div class="headerText">
+        <h2>This website was created to fulfill Web Technology module’s
+            requirements and does not represent an actual company or service.</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hilton.html">Hilton</a></li>
+            <li><a href="cityPalace.html">City Palace</a></li>
+            <li><a href="uzbekistanHotel.html">Uzbekistan</a></li>
+            <li><a href="hyattRegency.html">Hyatt Regency</a></li>
+            <li style="float: right"><a class="active" href="booking.html">Booking</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <h2 style="text-align: center">Fill Form to reserve Room in any Hotel</h2>
+    <p style="text-align: center">Our lovely user, thanks that you are using our service Express Booking!
+        <br>Attention! If form <b>filled NOT Properly</b> your request will be <b>DECLINED</b>!</p>
+    <div class="container">
+        <form action="#" id="formSubmission" method="get">
+            <div class="row">
+                <div class="col1">
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="col1Input">
+                    <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div class="col1Input">
+                    <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="CheckInDate">Check-In Date</label>
+                </div>
+                <div class="col1Input">
+                    <input type="text" id="CheckInDate" name="checkIn Date" placeholder="Write your Check-In Date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="CheckOutDate">Check-Out Date</label>
+                </div>
+                <div class="col1Input">
+                    <input type="text" id="CheckOutDate" name="checkOut Date" placeholder="Write your Check-Out Date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="hotel">Hotel</label>
+                </div>
+                <div class="col1Input">
+                    <select id="hotel" name="hotel">
+                        <option value="Hilton">Hilton</option>
+                        <option value="City Palace">City Palace</option>
+                        <option value="Uzbekistan Hotel">Uzbekistan Hotel</option>
+                        <option value="Hyatt Regency">Hyatt Regency</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="Room">Comments for Room</label>
+                </div>
+                <div class="col1Input">
+                    <textarea id="Room" name="room" placeholder="Write your wish about Room..."
+                              style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <h2 style="text-align: center">There is list of your Records. Please Fill Form and submit to add new record!</h2>
+    <div class="table" id="data">
+        <ul>
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>Check-In Date</li>
+            <li>Check-Out Date</li>
+            <li>Hotel</li>
+            <li>Comments</li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="firstColumn">
+        <p style="font-size: 22px; font-style: italic">Information</p>
+        <p>About us</p>
+        <p>Privacy Police</p>
+        <p>Terms of Use</p>
+    </div>
+    <div class="secondColumn">
+        <p style="font-size: 22px; font-style: italic">Hotels</p>
+        <p>Hyatt Regency</p>
+        <p>City Palace</p>
+        <p>Uzbekistan</p>
+        <p>Hilton</p>
+    </div>
+    <div class="thirdColumn">
+        <p style="font-size: 22px; font-style: italic">Contacts</p>
+        <p>Telephone</p>
+        <p>Email</p>
+        <p>Fax</p>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
