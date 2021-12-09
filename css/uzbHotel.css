@@ -1,0 +1,35 @@
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.box1 {
+    width: 49%;
+    padding: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+.box2 {
+    width: 50%;
+}
+
+img {
+    border: 2px solid black;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boxImg {
+    width: 50%;
+}
+.boxDescription {
+    width: 49%;
+    padding: 20px;
+    text-align: left;
+    margin-left: 40px;
+}
