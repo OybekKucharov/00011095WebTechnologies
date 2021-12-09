@@ -1,0 +1,82 @@
+.welcomeText {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcomeImg {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.48);
+}
+
+.box1 {
+    width: 48%;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.box2 {
+    width: 48%;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box {
+    color: black;
+    align-items: center;
+    text-align: center;
+    width: 24%;
+    border: 3px black;
+    background-color: rgba(255, 255, 255, 0.58);
+    transition: 0.1s all linear;
+    border-radius: 15px;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+.box img {
+    margin-top: 10px;
+    position: relative;
+    z-index: -0.25;
+}
+
+.boxButton {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transform: translate(90px, -160px);
+}
+
+.box:hover .boxImg {
+    z-index: -1;
+}
+
+.box:hover .boxButton {
+    opacity: 1;
+}
+
+.boxButton button {
+    background-color: #5017a8;
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
